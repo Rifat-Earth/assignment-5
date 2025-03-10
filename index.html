@@ -37,7 +37,7 @@
                 </div>
               <!-- middle button -->
                 <div > 
-                  <button class="btn btn-primary h-16  w-80">
+                  <button id="goto" class="btn btn-primary h-16  w-80">
                     <div class="flex">
                        <img class="w-10 h-10 mt-1 mr-2" src="assets/board.png" alt="">
                         <p class="text-xsm ml-2">Discover Something
@@ -183,10 +183,10 @@
     </div>
     <!-- javascript -->
      <script>
-      document.getElementById("child")
-   .addEventListener('click',function(){
-    document.body.style.backgroundColor ='linear-gradient( to right ,red, yellow, blue)';
-});
+     const button= document.getElementById("goto");
+     button.addEventListener('click',function(){
+      window.location.href="index1.html";
+     })
      </script>
 </body>
 </html>
