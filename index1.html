@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="navbar flex bg-base-100 shadow-sm justify-between">
+        <div class="flex"> <img class="w-8 h-8 bg-base-800" src="assets/logo.png" alt="Not found">
+      <h5 class="pt-1 ml-2 bg-base-800">Dev<span class="font-bold">Board</span></h5>
+    </div> 
+      <button class="btn btn-primary">Back to Desk</button>
+ </div>
+ <h1 class="font-bold text-2xl text-center mt-5 mb-2">Blogs</h1>
+ <div class="grid grid-row-1 mb-2 bg-base-100 shadow-sm">
+    <textarea class="p-2 mt-2" id="">Question-1: What are the different ways to select an element in the DOM?</textarea>
+    <textarea class="h-50 border-none" id=""> 
+         document.getElementById("calender")
+         document.getElementsByClassName("calender")
+         document.getElementsByTagName("calender")
+         document.querySelector("calender")
+         document.querySelectorAll("calender")
+    </textarea>
+ </div>
+ <div class="grid grid-row-1 mb-2 bg-base-100 shadow-lg ">
+    <textarea  class="mt-2 p-2" id="">Question-2: What is the difference between innerHTML, innerText, and textContent </textarea>
+    <textarea class="h-40 border-none" name="" id="">
+    1. innerHTML= sets the html inside a element(visible text).
+    2. innerText= sets or change the text inside an element.
+    3. textContent = sets the all text in an element.It is more    
+        faster than innerText(both text visible or invisible)
+    </textarea>
+ </div>
+ <div class="grid grid-row-1 mb-2 bg-base-100 shadow-sm">
+    <textarea class="mt-2 p-2" id="">Question-3: What is event delegation in the DOM?</textarea>
+    <textarea class="h-20 mt-5 border-none" id="">
+        Event delegation is a technique in javascript where a single event listener is attached to a parent element instead of multiple child elements. 
+        example: bubbles up
+    </textarea>
+ </div>
+ <div class="grid grid-row-1 mb-2 bg-base-100 shadow-sm">
+    <textarea class="p-2 mt-2" id="">Question-4: What is event bubbling in the DOM?</textarea>
+    <textarea class="h-40 border-none"  id="">
+      Answer:  when an event is triggered on an element ,the event 
+               starts at the target element than bubbles up to his previous element ....at last parent element.this is called the event bubbling in the DOM
+    </textarea>
+ </div>
+ <div class="grid grid-row-1 mb-2 bg-base-100 shadow-sm">
+    <textarea class="p-2 mt-2"  id="">Question-5: How do you create, add, and remove elements using JavaScript?</textarea>
+    <textarea class="h-40 border-none"  id="">
+      Create : document.createElement(" ")
+      Adding:   document.getElementById(' ')
+                  .appendChild('')
+      Remove: .removeChild('')
+    </textarea>
+ </div>
+</body>
+</html>
