@@ -60,14 +60,14 @@
             </div>
             </div>
         <!-- clear history -->
-        <div class=" ml-4 mr-8 text-center absolute ml-280">
+        <div id="" class=" ml-4 mr-8 text-center absolute ml-280">
             <div class="flex mt-5 ml-8">
                 <img class="w-4 h-4 mr-2 mt-1" src="assets/activity.png" alt="">
                 <h2> Activity Log</h2>
             </div> 
-            <button class="btn btn-primary mt-5 mb-5"> Clear History</button>
+            <button id="clear" class="btn btn-primary mt-5 mb-5"> Clear History</button>
             <hr>
-            <textarea class='h-150 w-50 border-none bg-green-50 mt-2' id=" newcomment"></textarea>
+            <textarea id="comment-container" class='h-150 w-50 border-none bg-green-50 mt-2' ></textarea>
         </div>
      </div>
     </div>
@@ -76,18 +76,18 @@
        <div class="grid grid-cols-3 w-5xl justify-evenly  mt-8">
         <div class="p-2">
      <div class="mt-5 w-80 h-70 bg-green-50 p-6 rounded-lg ml-12">
-      <div class="">
+      <div>
         <h2 class="rounded-lg bg-gray-100 w-30">ShopEase</h2>
       </div>
         <h1 class="mt-5 mb-5 text-xl font-bold">Fix Mobile Button Issue</h1>
-        <textarea id="comment" class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
+        <textarea id="add" id="comment-text" class="text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
         <div class="flex mt-2">
            <div>
             <h4 class="text-xsm">Deadline</h4>
             <h1>21 March 2025</h1>
            </div>
            <div>
-            <button id="commentpost" class="btn btn-primary ml-8">Completed</button>
+            <button id="disable" class="btn btn-primary ml-8 disable-btn">Completed</button>
            </div>
         </div>
       </div>
@@ -99,14 +99,14 @@
           <h2 class="rounded-lg bg-gray-100 w-30">CloudSync</h2>
         </div>
           <h1 class="mt-5 mb-5 text-xl font-bold">Add Dark Mode</h1>
-          <textarea class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Store the user's preference in localStorage, update CSS</textarea>
+          <textarea id="add" class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Store the user's preference in localStorage, update CSS</textarea>
           <div class="flex mt-2">
              <div>
               <h4 class="text-xsm">Deadline</h4>
               <h1>21 March 2025</h1>
              </div>
              <div>
-              <button class="btn btn-primary ml-8">Completed</button>
+              <button id="disable" class="btn btn-primary ml-8 disable-btn">Completed</button>
              </div>
           </div>
         </div></div>
@@ -117,14 +117,14 @@
             <h2 class="rounded-lg bg-gray-100 w-30">SwiftPay</h2>
           </div>
             <h1 class="mt-5 mb-5 text-xl font-bold">Optimize Home page</h1>
-            <textarea class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements,</textarea>
+            <textarea id="add" class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements,</textarea>
             <div class="flex mt-2">
                <div>
                 <h4 class="text-xsm">Deadline</h4>
                 <h1>21 March 2025</h1>
                </div>
                <div>
-                <button class="btn btn-primary ml-8">Completed</button>
+                <button id="disable" class="btn btn-primary ml-8 disable-btn">Completed</button>
                </div>
             </div>
           </div></div>
@@ -135,14 +135,14 @@
               <h2 class="rounded-lg bg-gray-100 w-30">Meta</h2>
             </div>
               <h1 class="mt-5 mb-5 text-xl font-bold">Add new emoji 🤲</h1>
-              <textarea class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
+              <textarea id="add" class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
               <div class="flex mt-2">
                  <div>
                   <h4 class="text-xsm">Deadline</h4>
                   <h1>21 March 2025</h1>
                  </div>
                  <div>
-                  <button class="btn btn-primary ml-8">Completed</button>
+                  <button id="disable" class="btn btn-primary ml-8 disable-btn">Completed</button>
                  </div>
               </div>
             </div></div>
@@ -153,14 +153,14 @@
                 <h2 class="rounded-lg bg-gray-100 w-30">Google LLC</h2>
               </div>
                 <h1 class="mt-5 mb-5 text-xl font-bold">Integrate OpenAI API</h1>
-                <textarea class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
+                <textarea id="add" class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
                 <div class="flex mt-2">
                    <div>
                     <h4 class="text-xsm">Deadline</h4>
                     <h1>21 March 2025</h1>
                    </div>
                    <div>
-                    <button class="btn btn-primary ml-8">Completed</button>
+                    <button id="disable" class="btn btn-primary ml-8 disable-btn">Completed</button>
                    </div>
                 </div>
               </div></div>
@@ -171,19 +171,20 @@
                   <h2 class="rounded-lg bg-gray-100 w-30">Glassdoar</h2>
                 </div>
                   <h1 class="mt-5 mb-5 text-xl font-bold">Improve Job searching </h1>
-                  <textarea class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
+                  <textarea id="add" class=" text-sm bg-gray-200 w-60 h-20 outline-none border-none rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, </textarea>
                   <div class="flex mt-2">
                      <div>
                       <h4 class="text-xsm">Deadline</h4>
                       <h1>21 March 2025</h1>
                      </div>
                      <div>
-                      <button class="btn btn-primary ml-8">Completed</button>
+                      <button id="disable" class="btn btn-primary ml-8 disable-btn">Completed</button>
                      </div>
                   </div>
                 </div></div>
     </div>
     <!-- javascript -->
+     <script src="clear.js"></script>
      <script src="index.js"></script>
      <script src="child.js"></script>
      <script>
